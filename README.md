@@ -54,11 +54,12 @@ The project follows a **3-layer architecture**:
 1. Start PostgreSQL.
 2. Configure the database connection in  
    `src/main/resources/application.properties`
-3. Run the Spring Boot application.
-4. Set your database password as an environment variable:
+3. Set your database password as an environment variable:
 
    ```bash
    DB_PASSWORD=your_password
+4. Run the Spring Boot application.
+
 5. Open the frontend in your browser:
    
     ```text
