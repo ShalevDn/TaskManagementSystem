@@ -55,10 +55,16 @@ The project follows a **3-layer architecture**:
 2. Configure the database connection in  
    `src/main/resources/application.properties`
 3. Run the Spring Boot application.
-4. Open the frontend in your browser:
+4. Set your database password as an environment variable:
 
-   ```text
+   ```bash
+   DB_PASSWORD=your_password
+5. Open the frontend in your browser:
+   
+    ```text
    http://localhost:8080/frontend/index.html
+  If your application is configured to use another port, replace `8080` with that port.
+
 ## API Endpoints
 - `GET /tasks` — Retrieve all tasks
 - `POST /tasks` — Create a new task
