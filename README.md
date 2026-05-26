@@ -2,6 +2,7 @@
 
 ## Project Description
 A simple full-stack web application for managing tasks.
+The frontend communicates with the backend through REST API calls using JavaScript `fetch`.
 
 This project was developed as part of a college course and uploaded as a portfolio project.
 
