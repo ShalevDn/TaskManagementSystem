@@ -16,6 +16,16 @@ The system allows users to:
 Each task includes a title, description, priority, status, and due date.  
 New tasks are created with a default status of **TODO**.
 
+## Screenshots
+
+### Desktop View
+
+![Desktop View](screenshots/computer_display.png)
+
+### Mobile View
+
+![Mobile View](screenshots/mobile_display.png)
+
 ## Task Enums
 
 ### Status
