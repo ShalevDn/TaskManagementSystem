@@ -44,9 +44,11 @@ The project follows a **3-layer architecture**:
 2. Configure the database connection in  
    `src/main/resources/application.properties`
 3. Run the Spring Boot application.
-4. Open in your browser: http://localhost:8080/frontend/index.html
-   (instead of 8080, use your own port, might still be 8080)
+4. Open the frontend in your browser:
 
+   ```text
+   http://localhost:8080/frontend/index.html
+   
 ## API Endpoints
 - `GET /tasks` — Retrieve all tasks
 - `POST /tasks` — Create a new task
