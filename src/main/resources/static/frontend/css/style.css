@@ -1,0 +1,53 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1, h2 {
+    text-align: center;
+}
+#filterBytxt{
+    text-align: left;
+}
+label {
+    display: inline-block;
+    width: 100px;
+}
+#creation, #deletion, #edit {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #3474ac;
+}
+
+tr:nth-child(odd) {
+    background: #ffffff;
+}
+tr:nth-child(even) {
+    background: #919191;
+}
+
+/*mobile fit*/
+@media (max-width: 600px) {
+    label {
+        width: 80px;
+    }
+
+    input, select {
+        width: 100%;
+    }
+}

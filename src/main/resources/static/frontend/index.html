@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task manager</h1>
+        <h2 id="filterBytxt">Filter by:</h2><br>
+
+        <label for="filter-status">Status:</label>
+        <select id="filter-status" name="priority">
+            <option value="">Don't filter</option>
+            <option value="TODO">To do</option>
+            <option value="IN_PROGRESS">In progress</option>
+            <option value="DONE">Done</option>
+        </select>
+
+        <label for="filter-priority">Priority:</label>
+        <select id="filter-priority" name="priority">
+            <option value="">Don't filter</option>
+            <option value="LOW">Low</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HIGH">High</option>
+        </select>
+
+        <button onclick="showTasks()">Filter!</button><br>
+
+        <table id="tasks" border="1"></table>
+
+
+        <div id="creation">
+            <h2>Create task:</h2>
+            <label for="creation-id">ID:</label>
+            <input id="creation-id" type="number"><br>
+
+            <label for="creation-title">Title:</label>
+            <input id="creation-title" type="text"><br>
+
+            <label for="creation-description">Description:</label>
+            <input id="creation-description" type="text"><br>
+
+            <label for="creation-priority">Priority:</label>
+            <select id="creation-priority" name="priority">
+                <option value="LOW">Low</option>
+                <option value='MEDIUM'>Medium</option>
+                <option value='HIGH'>High</option>
+            </select>
+
+            <br>
+
+            <label for="creation-duedate">Due Date:</label>
+            <input id="creation-duedate" type="date"><br>
+
+            <button id="create" onclick="createTask()">Create!</button>
+        </div>
+
+
+        <div id="deletion">
+            <h2>Delete task:</h2>
+
+            <label for="deletion-id">ID:</label>
+            <input id="deletion-id" type="number"><br>
+
+            <button id="delete" onclick="deleteTask()">Delete!</button>
+        </div>
+
+
+        <div id="edit">
+            <h2>Edit task:</h2>
+
+            <label for="edit-id">ID:</label>
+            <input id="edit-id" type="number"><br>
+
+            <label for="edit-title">Title:</label>
+            <input id="edit-title" type="text"><br>
+
+            <label for="edit-description">Description:</label>
+            <input id="edit-description" type="text"><br>
+
+            <label for="edit-priority">Priority:</label>
+            <select id="edit-priority" name="priority">
+                <option value="LOW">Low</option>
+                <option value="MEDIUM">Medium</option>
+                <option value="HIGH">High</option>
+                <option value="">Don't change</option>
+            </select><br>
+
+            <label for="edit-status">Status:</label>
+            <select id="edit-status" name="priority">
+                <option value="TODO">To do</option>
+                <option value="IN_PROGRESS">In progress</option>
+                <option value="DONE">Done</option>
+                <option value="">Don't change</option>
+            </select>
+
+            <br>
+
+            <label for="edit-duedate">Due Date:</label>
+            <input id="edit-duedate" type="date">
+            <br>
+            <button id="edit-btn" onclick="editTask()">Edit!</button>
+        </div>
+
+    </div>
+</body>
+</html>
