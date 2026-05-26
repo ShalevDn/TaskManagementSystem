@@ -48,7 +48,6 @@ The project follows a **3-layer architecture**:
 
    ```text
    http://localhost:8080/frontend/index.html
-   
 ## API Endpoints
 - `GET /tasks` — Retrieve all tasks
 - `POST /tasks` — Create a new task
